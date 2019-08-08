@@ -1,13 +1,13 @@
 {
 	"name": "@titanium/facebook",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "Native modules that allows you to use Facebook SDK with Axway Titanium native mobile apps.",
 	"main": "index.js",
 	"scripts": {
 		"list-files": "npm pack && tar -xvzf *.tgz && rm -rf package *.tgz",
 		"postinstall": "tiapp-remove-module facebook && tiapp-add-module facebook ios 6.1.0 && tiapp-add-module facebook android 8.1.0",
 		"postuninstall": "tiapp-remove-module facebook",
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"test": "npm install --ignore-scripts && npm run list-files"
 	},
 	"author": {
 		"name": "Brenton House",
@@ -42,8 +42,8 @@
 		"iphone",
 		"ipad",
 		"facebook",
-		"animation",
-		"brentonhouse"
+		"titanium-native-module",
+		"brenton-house"
 	],
 	"titanium": {
 		"type": "native-module",
