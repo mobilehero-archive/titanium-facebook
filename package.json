@@ -1,6 +1,6 @@
 {
 	"name": "@titanium/facebook",
-	"version": "0.0.2",
+	"version": "1.0.0",
 	"description": "Native modules that allows you to use Facebook SDK with Axway Titanium native mobile apps.",
 	"main": "index.js",
 	"scripts": {
