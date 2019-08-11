@@ -1,12 +1,12 @@
 {
 	"name": "@titanium/facebook",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Native modules that allows you to use Facebook SDK with Axway Titanium native mobile apps.",
 	"main": "index.js",
 	"scripts": {
 		"list-files": "npm pack && tar -xvzf *.tgz && rm -rf package *.tgz",
-		"postinstall": "tiapp-remove-module facebook && tiapp-add-module facebook ios 6.1.0 && tiapp-add-module facebook android 8.1.0",
-		"postuninstall": "tiapp-remove-module facebook",
+		"postinstall": "tiapp-install-module",
+		"postuninstall": "tiapp-uninstall-module",
 		"test": "npm install --ignore-scripts && npm run list-files"
 	},
 	"author": {
@@ -47,24 +47,28 @@
 	],
 	"titanium": {
 		"type": "native-module",
-		"platform": [
-			"ios",
-			"android"
-		],
-		"native": [
-			{
-				"name": "facebook",
-				"platform": "ios",
-				"version": "6.1.0"
+		"platform": {
+			"ios": {
+				"moduleid": "titanium-facebook",
+				"name": "titanium-facebook",
+				"version": "6.1.0",
+				"apiversion": 2,
+				"architecture": "armv7 arm64 i386 x86_64",
+				"minsdk": "6.3.0",
+				"guid": "da8acc57-8673-4692-9282-e3c1a21f5d83"
 			},
-			{
-				"name": "ti.animation",
-				"platform": "android",
-				"version": "8.1.0"
+			"android": {
+				"moduleid": "titanium-facebook",
+				"name": "titanium-facebook",
+				"version": "8.1.0",
+				"apiversion": 4,
+				"architecture": "arm64-v8a armeabi-v7a x86",
+				"minsdk": "7.0.0",
+				"guid": "e4f7ac61-1ee7-44c5-bc27-fa6876e2dce9"
 			}
-		]
+		}
 	},
 	"dependencies": {
-		"@titanium/tiapp-xml": "^0.4.2"
+		"@titanium/tiapp-xml": "^0.7.2"
 	}
 }
