@@ -1,6 +1,6 @@
 {
 	"name": "@titanium/facebook",
-	"version": "1.0.4",
+	"version": "1.0.5",
 	"description": "Native modules that allows you to use Facebook SDK with Axway Titanium native mobile apps.",
 	"main": "index.js",
 	"scripts": {
@@ -47,11 +47,11 @@
 	],
 	"titanium": {
 		"type": "native-module",
+		"version": "1.0.5",
 		"platform": {
 			"ios": {
 				"moduleid": "titanium-facebook",
 				"name": "titanium-facebook",
-				"version": "6.1.0",
 				"apiversion": 2,
 				"architecture": "armv7 arm64 i386 x86_64",
 				"minsdk": "6.3.0",
@@ -60,7 +60,6 @@
 			"android": {
 				"moduleid": "titanium-facebook",
 				"name": "titanium-facebook",
-				"version": "8.1.0",
 				"apiversion": 4,
 				"architecture": "arm64-v8a armeabi-v7a x86",
 				"minsdk": "7.0.0",
