@@ -63,15 +63,8 @@ npm install @titanium/facebook
 
 ## Getting Started
 
-Note that the min SDK for this module is 5.0.0.GA and later. You do not need to download or unpack it.
-Edit the modules section of your tiapp.xml file to include this module:
-```xml
-<modules>
-    <module platform="android">facebook</module>
-    <module platform="iphone">facebook</module>
-</modules>
 ```
-Also you will need a Facebook App ID ready. To create a Facebook App ID, go to the Facebook Developer App: developers.facebook.com/apps
+You will need a Facebook App ID ready. To create a Facebook App ID, go to the Facebook Developer App: developers.facebook.com/apps
 
 On the iOS platform, add the following property to the \<ios\>\<plist\>\<dict\> section in tiapp.xml:
 ```xml
@@ -224,7 +217,7 @@ The following behaviors are available:
 These constants correspond to the ones exposed the by the Facebook SDK on each platform - for more information, see the Facebook documentation.
 
 ```js
-    var fb = require('facebook');
+    var fb = require('@titanium/facebook');
     fb.initialize();
     fb.setLoginBehavior(fb.LOGIN_BEHAVIOR_NATIVE);
     fb.permissions = ['email'];
@@ -236,7 +229,7 @@ There are two ways to initiate the login process:
 Create a Facebook LoginButton to allow the user to log in if desired. You can also add either readPermissions or publishPermissions, otherwise the default is request for `public_profile`. Doing so will let the LoginButton request for permissions when logging in. Note that Facebook does not support setting both parameters at the same time to the LoginButton. For a complete list of permissions, see the official Facebook Permissions Reference.
 
 ```javascript
-    var fb = require('facebook');
+    var fb = require('@titanium/facebook');
     fb.initialize();
     var loginButton = fb.createLoginButton({
         readPermissions: ['read_stream','email']
@@ -246,7 +239,7 @@ Create a Facebook LoginButton to allow the user to log in if desired. You can al
 Call authorize to prompt the user to login and authorize the application. This method can be considered if you prefer to use custom UI instead of the loginButton.
 
 ```javascript
-    var fb = require('facebook');
+    var fb = require('@titanium/facebook');
     fb.initialize(); 
     fb.permissions = ['email'];
     facebook.authorize();
@@ -261,7 +254,7 @@ For a complete list of permissions, see the official Facebook Permissions Refere
 `requestNewReadPermissions`
 
 ```javascript
-var fb = require('facebook');
+var fb = require('@titanium/facebook');
 fb.requestNewReadPermissions(['read_stream','user_hometown', etc...], function(e){
     if(e.success) {
         fb.requestWithGraphPath(...);
@@ -278,7 +271,7 @@ fb.requestNewReadPermissions(['read_stream','user_hometown', etc...], function(e
 You must use the audience constants from the module, either AUDIENCE_NONE, AUDIENCE_ONLY_ME, AUDIENCE_FRIENDS, or AUDIENCE_EVERYONE. Note that it is not an error for the user to 'Skip' your requested permissions, so you should check the module's permissions property following the call.
 
 ```javascript
-var fb = require('facebook');
+var fb = require('@titanium/facebook');
 fb.requestNewPublishPermissions(['read_stream','user_hometown', etc...], fb.AUDIENCE_FRIENDS, function(e) {
     if (e.success) {
         fb.requestWithGraphPath(...);
@@ -306,7 +299,7 @@ Note: fql is no longer supported by Facebook beginning April 2015, so this modul
 Example 1:
 
 ```javascript
-    var fb = require('facebook');
+    var fb = require('@titanium/facebook');
     fb.requestWithGraphPath('me/groups', {}, 'GET',  function(e) {
         if (!e.success) {
             if (e.error) {
@@ -322,7 +315,7 @@ Example 1:
 Example 2:
 
 ```javascript
-    var fb = require('facebook');
+    var fb = require('@titanium/facebook');
     fb.requestWithGraphPath('me/picture', {'redirect': 'false'}, 'GET',  function(e) {
         if (!e.success) {
             if (e.error) {
@@ -345,7 +338,7 @@ To share a link call fb.share({url: 'http://example.com' });
 To share more information, example:
 
 ```javascript
-    var fb = require('facebook');
+    var fb = require('@titanium/facebook');
     fb.presentShareDialog({
         link: 'https://appcelerator.com/',
         title: 'great product',
@@ -361,7 +354,7 @@ Opens a supported Facebook Invite dialog from the Facebook App. To monitor if th
 or not, listen to the `shareCompleted` event. Example:
 
 ```javascript
-    var fb = require('facebook');
+    var fb = require('@titanium/facebook');
     fb.presentInviteDialog({
         appLink: "https://fb.me/xxxxxxxx",
         appPreviewImageLink: "https://www.mydomain.com/my_invite_image.jpg"
@@ -377,7 +370,7 @@ share media including images, GIF's and videos using the `shareMediaToMessenger`
 #### Share links:
 
 ```javascript
-    var fb = require('facebook');
+    var fb = require('@titanium/facebook');
     fb.presentMessengerDialog({
         title: "Appcelerator Titanium rocks!", // The title of the link
         description: "Shared from my Titanium application", // The description of the link
@@ -391,7 +384,7 @@ share media including images, GIF's and videos using the `shareMediaToMessenger`
 #### Share media:
 
 ```javascript
-    var fb = require('facebook');
+    var fb = require('@titanium/facebook');
     var btn = Ti.UI.createButton({
         title: "Share media to messenger"
     });
@@ -428,7 +421,7 @@ Sends an application request. Fires a `sendRequestCompleted` event. You can opti
 See official Facebook Dialogs documentation for more details.
 
 ```javascript
-    var fb = require('facebook');
+    var fb = require('@titanium/facebook');
     fb.presentSendRequestDialog({
         message: 'Go to https://appcelerator.com/',
         title: 'Invitation to Appcelerator',
@@ -449,7 +442,7 @@ A click on the button can share the content to multiple users.
 To create a Messenger button, call the `createMessengerButton` method. Example: 
 
 ```javascript
-    var fb = require('facebook');
+    var fb = require('@titanium/facebook');
     var messengerButton = fb.createMessengerButton({
         mode: fb.MESSENGER_BUTTON_MODE_RECTANGULAR
         style: fb.MESSENGER_BUTTON_STYLE_BLUE
@@ -465,7 +458,7 @@ Deferred deep linking allows you to send people to a custom view after they inst
 You can simply call fetchDeferredAppLink on startup to open eventually incoming app links.
 
 ```javascript
-var fb = require('facebook');
+var fb = require('@titanium/facebook');
 fb.fetchDeferredAppLink(function(e) {
     if (e.success) {
         // Dispatch internal routes
@@ -497,7 +490,7 @@ fb.logPurchase(13.37, 'USD'); // Pass a number of the amound and a string for th
 
 The error handling adheres to the new Facebook guideline for events such as `login`, `shareCompleted` and `requestSendCompleted`. Here is how to handle `login` events:
 ```javascript
-    var fb = require('facebook');
+    var fb = require('@titanium/facebook');
     fb.addEventListener('login', function(e) {
         // You *will* get this event if loggedIn == false below
         // Make sure to handle all possible cases of this event
