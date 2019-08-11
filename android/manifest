@@ -11,8 +11,8 @@ license: Apache License Version 2.0
 copyright: Copyright (c) 2014 by Mark Mokryn, Copyright (c) 2009-present by Appcelerator
 
 # these should not be edited
-name: Facebook
-moduleid: facebook
+name: titanium-facebook
+moduleid: titanium-facebook
 guid: e4f7ac61-1ee7-44c5-bc27-fa6876e2dce9
 platform: android
 minsdk: 7.0.0

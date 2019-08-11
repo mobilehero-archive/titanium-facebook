@@ -11,7 +11,7 @@ copyright: Copyright (c) 2009-present by Axway Appcelerator
 
 # these should not be edited
 name: titanium-facebook
-moduleid: facebook
+moduleid: titanium-facebook
 guid: da8acc57-8673-4692-9282-e3c1a21f5d83
 platform: iphone
 minsdk: 6.3.0
