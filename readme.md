@@ -10,6 +10,7 @@
 # @titanium/facebook
 
 [![@titanium/facebook](https://img.shields.io/npm/v/@titanium/facebook.png)](https://www.npmjs.com/package/@titanium/facebook)
+[![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=brentonhouse/titanium-facebook)](https://dependabot.com)
 
 
 > Native modules that allows you to use Facebook SDK with Axway Titanium native mobile apps.
