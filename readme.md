@@ -46,11 +46,14 @@
 
 ## 📝 Description
 
-This is a repackaging of the compiled iOS and Android modules for [Titanium Facebook](https://github.com/appcelerator-modules/ti.facebook) to allow for installation via npm.
+> This is a repackaging of the compiled iOS and Android modules for [Titanium Facebook](https://github.com/appcelerator-modules/ti.facebook) to allow for installation via npm.
+
 
 ## 🚀 Getting Started
 
+
 ### Install `@titanium/facebook` in root of project
+
 
 ```bash
 npm install @titanium/facebook
