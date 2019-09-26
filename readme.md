@@ -62,8 +62,8 @@ npm install @titanium/facebook
 
 ## ✨Features
 
-* [x] Includes Titanium native iOS module: `facebook 6.1.0`
-* [x] Includes Titanium native Android module: `facebook 8.1.0`
+* [x] Includes Titanium native iOS module: `facebook 7.0.0`
+* [x] Includes Titanium native Android module: `facebook 8.0.0`
 * [x] Logging in to Facebook and authorizing your application
 * [x] Requesting read and publish permissions
 * [x] Refreshing existing permission
