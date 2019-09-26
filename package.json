@@ -7,7 +7,8 @@
 		"list-files": "npm pack && tar -xvzf *.tgz && rm -rf package *.tgz",
 		"postinstall": "tiapp-install-module",
 		"postuninstall": "tiapp-uninstall-module",
-		"test": "npm install --ignore-scripts && npm run list-files"
+		"test": "npm install --ignore-scripts && npm run list-files",
+		"prepublishOnly": "git pull && bump"
 	},
 	"author": "Axway",
 	"maintainers": [
@@ -43,11 +44,11 @@
 	],
 	"titanium": {
 		"type": "native-module",
-		"version": "1.0.8",
-		"moduleid": "titanium-facebook",
-		"name": "titanium-facebook",
 		"platform": {
 			"ios": {
+				"version": "7.0.0",
+				"moduleid": "facebook",
+				"name": "titanium-facebook",				
 				"apiversion": 2,
 				"architectures": [
 					"armv7",
@@ -55,10 +56,13 @@
 					"i386",
 					"x86_64"
 				],
-				"minsdk": "6.3.0",
+				"minsdk": "7.3.0",
 				"guid": "da8acc57-8673-4692-9282-e3c1a21f5d83"
 			},
 			"android": {
+				"version": "8.0.0",
+				"moduleid": "facebook",
+				"name": "Facebook",				
 				"apiversion": 4,
 				"architectures": [
 					"arm64-v8a",

@@ -1,2 +1,2 @@
 
-module.exports = require('titanium-facebook');
+module.exports = require('facebook');
