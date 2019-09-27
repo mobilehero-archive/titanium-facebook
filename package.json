@@ -17,7 +17,7 @@
 			"email": "brenton.house@gmail.com",
 			"url": "https://brenton.house"
 		}
-	], 
+	],
 	"repository": {
 		"type": "git",
 		"url": "github:brentonhouse/titanium-facebook"
@@ -75,6 +75,6 @@
 		}
 	},
 	"dependencies": {
-		"@titanium/tiapp-xml": "^0.9.1"
+		"@titanium/tiapp-xml": "^0.9.0"
 	}
 }
