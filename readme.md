@@ -1,10 +1,29 @@
-
-<a href="#titaniumfacebook">
+<a href="https://brenton.house/saying-goodbye-to-axway-amplify-titanium-31a44f3671de">
+	<h1 align="center">
+	🪦 RIP Axway Amplify Titanium (2010 - 2022)
+	</h1>
+</a>
+<a href="https://brenton.house/saying-goodbye-to-axway-amplify-titanium-31a44f3671de">
 	<p align="center">
-	<img src="https://cdn.secure-api.org/images/warning-sign-area51.png" width="80%" />
-	<img src="https://cdn.secure-api.org/images/border-line-3.png" width="70%" height="50" />
+		<img src="https://cdn.secure-api.org/images/RIP-Axway-Amplify-Titanium.png" alt="RIP Axway Amplify Titanium (2010 - 2022)" width="80%" />
 	</p>
 </a>
+<a href="https://brenton.house/saying-goodbye-to-axway-amplify-titanium-31a44f3671de">
+	<p align="center">
+		🪦 &nbsp; RIP Axway Amplify Titanium (2010 - 2022)
+	</p>
+</a>
+<p>&nbsp;</p>
+<a href="https://brenton.house/saying-goodbye-to-axway-amplify-titanium-31a44f3671de">
+	<h2 align="center">
+		🛑 This project is no longer being maintained 🛑
+	</h2>
+</a>
+<p>&nbsp;</p>
+<hr>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
 
 
 # @titanium/facebook
@@ -15,34 +34,34 @@
 
 > Native modules that allows you to use Facebook SDK with Axway Titanium native mobile apps.
 
-- [📝 Description](#-description)
-- [🚀 Getting Started](#-getting-started)
-	- [Install `@titanium/facebook` in root of project](#install-titaniumfacebook-in-root-of-project)
-- [✨Features](#features)
-- [Getting Started](#getting-started)
-	- [iOS 10 Compatibility](#ios-10-compatibility)
-	- [Android Key Hash for Facebook Developer Profile](#android-key-hash-for-facebook-developer-profile)
-	- [Proxy required per Android activity](#proxy-required-per-android-activity)
-	- [Facebook Login and Authorization](#facebook-login-and-authorization)
-	- [Requesting read and publish permissions](#requesting-read-and-publish-permissions)
-	- [Refreshing Permissions](#refreshing-permissions)
-	- [Facebook Graph API](#facebook-graph-api)
-	- [Share Dialog](#share-dialog)
-	- [Invite Dialog](#invite-dialog)
-	- [Messenger Dialogs (iOS)](#messenger-dialogs-ios)
-		- [Share links:](#share-links)
-		- [Share media:](#share-media)
-	- [Send Requests Dialog](#send-requests-dialog)
-	- [Messenger Button](#messenger-button)
-	- [Deferred App links](#deferred-app-links)
-	- [Log App Events](#log-app-events)
-	- [Log Purchases](#log-purchases)
-	- [Notes](#notes)
-	- [Events and error handling](#events-and-error-handling)
-	- [Credits](#credits)
-- [📚Learn More](#learn-more)
-- [📣 Feedback](#-feedback)
-- [©️ Legal](#️-legal)
+* [📝 Description](#-description)
+* [🚀 Getting Started](#-getting-started)
+	* [Install `@titanium/facebook` in root of project](#install-titaniumfacebook-in-root-of-project)
+* [✨Features](#features)
+* [Getting Started](#getting-started)
+	* [iOS 10 Compatibility](#ios-10-compatibility)
+	* [Android Key Hash for Facebook Developer Profile](#android-key-hash-for-facebook-developer-profile)
+	* [Proxy required per Android activity](#proxy-required-per-android-activity)
+	* [Facebook Login and Authorization](#facebook-login-and-authorization)
+	* [Requesting read and publish permissions](#requesting-read-and-publish-permissions)
+	* [Refreshing Permissions](#refreshing-permissions)
+	* [Facebook Graph API](#facebook-graph-api)
+	* [Share Dialog](#share-dialog)
+	* [Invite Dialog](#invite-dialog)
+	* [Messenger Dialogs (iOS)](#messenger-dialogs-ios)
+		* [Share links:](#share-links)
+		* [Share media:](#share-media)
+	* [Send Requests Dialog](#send-requests-dialog)
+	* [Messenger Button](#messenger-button)
+	* [Deferred App links](#deferred-app-links)
+	* [Log App Events](#log-app-events)
+	* [Log Purchases](#log-purchases)
+	* [Notes](#notes)
+	* [Events and error handling](#events-and-error-handling)
+	* [Credits](#credits)
+* [📚Learn More](#learn-more)
+* [📣 Feedback](#-feedback)
+* [©️ Legal](#️-legal)
 
 
 ## 📝 Description
