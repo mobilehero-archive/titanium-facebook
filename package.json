@@ -1,6 +1,6 @@
 {
 	"name": "@titanium/facebook",
-	"version": "1.0.14",
+	"version": "1.0.15",
 	"description": "Native modules that allows you to use Facebook SDK with Axway Titanium native mobile apps.",
 	"main": "index.js",
 	"scripts": {
@@ -26,7 +26,7 @@
 	"bugs": {
 		"url": "https://github.com/brentonhouse/titanium-facebook/issues"
 	},
-	"homepage": "https://github.com/brentonhouse/titanium-facebook#readme",
+	"homepage": "https://brenton.house/saying-goodbye-to-axway-amplify-titanium-31a44f3671de",
 	"keywords": [
 		"titanium",
 		"mobile",
