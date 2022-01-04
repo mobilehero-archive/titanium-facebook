@@ -1,7 +1,7 @@
 {
 	"name": "@titanium/facebook",
-	"version": "1.0.17",
-	"description": "Native modules that allows you to use Facebook SDK with Axway Titanium native mobile apps.",
+	"version": "1.0.18",
+	"description": "Axway Amplify modules to use Facebook SDK for Appcelerator Titanium apps",
 	"main": "index.js",
 	"scripts": {
 		"list-files": "npm pack && tar -xvzf *.tgz && rm -rf package *.tgz",
