@@ -1,14 +1,15 @@
 {
 	"name": "@titanium/facebook",
-	"version": "1.0.18",
-	"description": "Axway Amplify modules to use Facebook SDK for Appcelerator Titanium apps",
+	"version": "1.0.19",
+	"description": "⭐  Axway Amplify modules to use Facebook SDK for Appcelerator Titanium SDK Framework",
 	"main": "index.js",
 	"scripts": {
-		"list-files": "npm pack && tar -xvzf *.tgz && rm -rf package *.tgz",
-		"postinstall": "tiapp-install-module",
-		"postuninstall": "tiapp-uninstall-module",
-		"test": "npm install --ignore-scripts && npm run list-files",
-		"prepublishOnly": "git pull && bump insane"
+		"lint": "eslint . --fix",
+		"list": "npm pack && tar -xvzf *.tgz && rm -rf package *.tgz",
+		"prep": "npm install --ignore-scripts",
+		"test": "npm run prep",
+		"prepublishOnly": "git pull && npm test && bump insane",
+		"prepublishOnly2": "git pull && npm test && npm audit fix && bump insane"
 	},
 	"author": "Axway",
 	"maintainers": [
@@ -20,11 +21,11 @@
 	],
 	"repository": {
 		"type": "git",
-		"url": "github:brentonhouse/titanium-facebook"
+		"url": "github:mobilehero-archive/titanium-facebook"
 	},
 	"license": "Apache-2.0",
 	"bugs": {
-		"url": "https://github.com/brentonhouse/titanium-facebook/issues"
+		"url": "https://github.com/mobilehero-archive/titanium-facebook/issues"
 	},
 	"homepage": "https://brenton.house/saying-goodbye-to-axway-amplify-titanium-31a44f3671de",
 	"keywords": [
@@ -39,12 +40,16 @@
 		"iphone",
 		"ipad",
 		"facebook",
-		"axway-amplify",
+		"sdk",
+		"plugin",
 		"amplify",
 		"api-builder",
+		"appcelerator-titanium",
 		"titanium-sdk",
+		"titanium-mobile",
+		"titanium-module",
 		"axway-sdk",
-		"titanium-native-module",
+		"axway-amplify",
 		"brenton-house"
 	],
 	"titanium": {
@@ -80,6 +85,33 @@
 		}
 	},
 	"dependencies": {
-		"@titanium/tiapp-xml": "^0.9.5"
+		"@geek/cache": "^1.0.2",
+		"@geek/config": "^0.2.4",
+		"@geek/dotenv": "^0.0.9",
+		"@geek/jsonc": "^1.0.4",
+		"@geek/jwt": "^1.0.1",
+		"@geek/logger": "^1.0.18",
+		"@geek/retry": "^1.0.0",
+		"@geek/spawn": "^0.0.3",
+		"@geek/spinner": "^1.0.0",
+		"@geek/tld": "^2.0.1-1",
+		"@titanium/appcelerator": "^6.0.4",
+		"@titanium/bluebird": "^3.7.9",
+		"@titanium/errors": "^1.0.7",
+		"@titanium/essentials": "^1.0.38",
+		"@titanium/events": "^1.0.20",
+		"@titanium/eventsource": "^1.0.5",
+		"@titanium/jwt": "^1.0.8",
+		"@titanium/module-copier": "^1.0.14",
+		"@titanium/please": "^1.0.16",
+		"@titanium/polyfill": "^1.0.17",
+		"@titanium/querystring": "^1.0.2",
+		"@titanium/tiapp-xml": "^1.0.14",
+		"@titanium/titanium": "^5.4.8",
+		"@titanium/turbo": "^2.2.23"
+	},
+	"devDependencies": {
+		"@geek/eslint-config": "^1.0.3",
+		"@titanium/eslint-config": "^1.0.8"
 	}
 }
