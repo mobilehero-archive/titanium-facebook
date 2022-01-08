@@ -1,6 +1,6 @@
 {
 	"name": "@titanium/facebook",
-	"version": "1.0.19",
+	"version": "1.0.20",
 	"description": "⭐  Axway Amplify modules to use Facebook SDK for Appcelerator Titanium SDK Framework",
 	"main": "index.js",
 	"scripts": {
