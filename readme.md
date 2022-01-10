@@ -1,12 +1,12 @@
 [//]: # (header-start)
 
 <a href="https://brenton.house/saying-goodbye-to-axway-amplify-titanium-31a44f3671de">
-	<h1 align="center">
-	👇 &nbsp; See notes below  &nbsp; 👇
-</h1>	
+<h1 align="center">
+	Axway Amplify End-of-Life Announcement
+</h1>
 <h2 align="center">
-	Regarding Axway Amplify End-of-Life Announcement
-	</h2>
+	👇 &nbsp; See notes below  &nbsp; 👇
+</h2>	
 </a>
 
 <a href="https://brenton.house/saying-goodbye-to-axway-amplify-titanium-31a44f3671de">
@@ -48,8 +48,9 @@ Some Open-Source versions of Axway products will live on after End-of-Life (EOL)
 
 # @titanium/facebook
 
-[![@titanium/facebook](https://img.shields.io/npm/v/@titanium/facebook.png)](https://www.npmjs.com/package/@titanium/facebook)
-[![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=brentonhouse/titanium-facebook)](https://dependabot.com)
+[![@titanium/facebook version](https://img.shields.io/npm/v/@titanium/facebook.png)](https://www.npmjs.com/package/@titanium/facebook)
+[![@titanium/facebook downloads](https://img.shields.io/npm/dm/@titanium/facebook.svg)](https://www.npmjs.com/package/@titanium/turbo)
+[![@titanium/facebook dependencies](https://img.shields.io/librariesio/release/npm/@titanium/facebook.svg)](https://www.npmjs.com/package/@titanium/facebook)
 
 
 > Native modules that allows you to use Facebook SDK with Axway Titanium native mobile apps.
