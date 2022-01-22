@@ -1,6 +1,6 @@
 {
 	"name": "@titanium/facebook",
-	"version": "1.0.42",
+	"version": "1.0.43",
 	"description": "⭐  Axway Amplify modules to use Facebook SDK for Appcelerator Titanium SDK Framework",
 	"main": "index.js",
 	"scripts": {
@@ -106,7 +106,7 @@
 		"@titanium/events": "^1.0.40",
 		"@titanium/eventsource": "^1.0.31",
 		"@titanium/identity": "^2.0.31",
-		"@titanium/json5": "^1.0.24",
+		"@titanium/json5": "^1.0.25",
 		"@titanium/jsonc": "^1.0.26",
 		"@titanium/jwt": "^1.0.31",
 		"@titanium/module-copier": "^1.0.36",
@@ -121,6 +121,6 @@
 	},
 	"devDependencies": {
 		"@geek/eslint-config": "^1.0.3",
-		"@titanium/eslint-config": "^1.0.32"
+		"@titanium/eslint-config": "^1.0.33"
 	}
 }
